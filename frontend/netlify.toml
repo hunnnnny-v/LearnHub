@@ -1,0 +1,7 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+
+mongodb+srv://hunnyv2003:<password>@to-do-app.qrb0g7i.mongodb.net/?retryWrites=true&w=majority

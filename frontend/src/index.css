@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@layer base {
+  :root {
+    --text: #000000;
+    --background: #f7fafd;
+    --primary: #82afe3;
+    --secondary: #d5e4f6;
+    --accent: #2e7ad1;
+    --delete: rgb(226, 85, 85);
+    --shadow: #82afe3;
+    --scrollbarBG: #f7fafd;
+    --thumbBG: #2e7ad1;
+  }
+  .dark {
+    --text: #ffffff;
+    --background: #020508;
+    --primary: #1c497d;
+    --secondary: #09182a;
+    --accent: #2e7ad1;
+    --delete: rgb(226, 85, 85);
+    --shadow: #1c497d;
+    --scrollbarBG: #020508;
+    --thumbBG: #2e7ad1;
+  }
+
+  .green {
+    --text: #1f0f1b;
+    --background: #f8f1f7;
+    --primary: #6cb77d;
+    --secondary: #c5e2db;
+    --accent: #5c9348;
+    --delete: rgb(226, 85, 85);
+    --shadow: #6cb77d;
+    --scrollbarBG: #f8f1f7;
+    --thumbBG: #5c9348;
+  }
+
+  .green-dark {
+    --text: #f0e0ec;
+    --background: #0e070d;
+    --primary: #48935a;
+    --secondary: #1d3a33;
+    --accent: #80b76c;
+    --delete: rgb(226, 85, 85);
+    --shadow: #48935a;
+    --scrollbarBG: #0e070d;
+    --thumbBG: #80b76c;
+  }
+
+  .pink {
+    --text: #071813;
+    --background: #f3fcf9;
+    --primary: #d6718f;
+    --secondary: #ebddbc;
+    --accent: #aa3156;
+    --delete: rgb(226, 85, 85);
+    --shadow: #d6718f;
+    --scrollbarBG: #f3fcf9;
+    --thumbBG: #aa3156;
+  }
+  .pink-dark {
+    --text: #e7f8f3;
+    --background: #030c09;
+    --primary: #8e2948;
+    --secondary: #433514;
+    --accent: #ce5579;
+    --delete: rgb(226, 85, 85);
+    --shadow: #8e2948;
+    --scrollbarBG: #030c09;
+    --thumbBG: #ce5579;
+  }
+
+  .turq {
+    --text: #000000;
+    --background: #edfdee;
+    --primary: #46ecac;
+    --secondary: #c3f2f9;
+    --accent: #17c2d9;
+    --delete: rgb(226, 85, 85);
+    --shadow: #46ecac;
+    --scrollbarBG: #edfdee;
+    --thumbBG: #17c2d9;
+  }
+  .turq-dark {
+    --text: #ffffff;
+    --background: #021203;
+    --primary: #13b979;
+    --secondary: #06353c;
+    --accent: #26d2e8;
+    --delete: rgb(226, 85, 85);
+    --shadow: #13b979;
+    --scrollbarBG: #021203;
+    --thumbBG: #26d2e8;
+  }
+}
+
+/* @layer base {
+  :root {
+    --text: #1f0f1b;
+    --background: #f8f1f7;
+    --primary: #6cb77d;
+    --secondary: #c5e2db;
+    --accent: #5c9348;
+    --delete: rgb(226, 85, 85);
+    --shadow: #6cb77d;
+    --scrollbarBG: #f8f1f7;
+    --thumbBG: #5c9348;
+  }
+  .dark {
+    --text: #f0e0ec;
+    --background: #0e070d;
+    --primary: #48935a;
+    --secondary: #1d3a33;
+    --accent: #80b76c;
+    --delete: rgb(226, 85, 85);
+    --shadow: #48935a;
+    --scrollbarBG: #0e070d;
+    --thumbBG: #80b76c;
+  }
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 20%;
+
+  box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px #82afe3;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  margin-bottom: 3px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-color: #17c2d9;
+  background: var(--accent);
+  transform-origin: 0%;
+}
+
+/* Calendar Container */
+
+/* Calendar Day */
+.calendar-day {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+}
